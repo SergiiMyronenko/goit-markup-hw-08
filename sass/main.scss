@@ -1,0 +1,83 @@
+//body styles
+
+@import './base/common';
+
+// variables
+@import './utils/vars';
+
+//tag styles
+
+@import './base/reset';
+
+//container
+
+@import './base/container';
+
+// sections (paddings only)
+
+@import './base/section';
+
+// section title
+
+@import './base/section__title';
+
+//card set
+@import './base/card-set';
+
+//visually-hidden
+
+@import './utils/visuallyhidden';
+
+//header
+@import './components/header';
+
+//navigation & contacts in header
+@import './components/nav';
+
+//logo
+@import './components/logo';
+
+//buttons
+@import './components/buttons';
+
+
+//sections 
+@import './components/sections';
+
+// footer
+@import './components/footer';
+
+//backdrop for modal window
+@import './components/backdrop';
+
+//modal window
+@import './components/modal-window';
+
+//social list
+@import './components/social';
+
+//filter in portfolio
+@import './components/filter';
+
+
+//hero
+@import './layout/hero';
+
+// section advantages
+
+@import './layout/advantages';
+
+// what-we-do section
+
+@import './layout/section--what-we-do';
+
+//our team section
+
+@import './layout/team';
+
+
+//our clients section
+@import './layout/clients';
+
+//portfolio
+@import './layout/portfolio';

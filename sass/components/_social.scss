@@ -1,0 +1,26 @@
+.social {
+    gap: 10px;
+    flex-basis: calc((100% - 30px) / 4);
+    justify-content: center;
+    align-items: center;
+}
+
+.social__icon {
+    width: 44px;
+    height: 44px;
+    color: var(--social-icon-color);
+    border-radius: 50%;
+    fill: currentColor;
+
+    transition-property: color, background-color;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-fun);
+
+}
+
+.social__icon:hover,
+.social__icon:focus {
+    color: var(--primary-background-color);
+    background-color: var(--primary-accent-color);
+
+}

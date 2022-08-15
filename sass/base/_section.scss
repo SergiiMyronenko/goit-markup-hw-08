@@ -1,0 +1,17 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section__card-title {
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-transform: uppercase;
+}

@@ -1,0 +1,90 @@
+.portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+
+}
+
+.portfolio__link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    outline: 1px solid var(--outline);
+    transition-property: box-shadow;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-fun);
+}
+
+.portfolio__link:hover,
+.portfolio__link:focus {
+    box-shadow:
+        1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+        0 4px 4px 0 rgba(0, 0, 0, 0.06),
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__img {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+
+    color: var(--primary-background-color);
+    background-color: var(--overlay-background);
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-fun);
+
+}
+
+.portfolio__link:hover .portfolio__overlay,
+.portfolio__link:focus .portfolio__overlay {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.portfolio__overlay-text {
+
+    align-items: centre;
+    max-width: 322px;
+
+}
+
+.portfolio__card-legend {
+    padding: 20px 24px;
+
+}
+
+.portfolio__card-title {
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-text-color);
+}
+
+.portfolio__card-subtitle {
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: calc(30/16);
+}

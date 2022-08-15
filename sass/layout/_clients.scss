@@ -1,0 +1,20 @@
+.clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients__icon {
+    fill: currentColor;
+    outline: 1px solid currentColor;
+    border-radius: 4px;
+    padding: 16px;
+    color: var(--social-icon-color);
+    transition-property: color, fill;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-fun);
+}
+
+
+.clients__icon:hover,
+.clients__icon:focus {
+    color: var(--primary-accent-color);
+}

@@ -1,0 +1,17 @@
+.advantages__item {
+    flex-basis: calc((100% - 90px)/4);
+}
+
+.advantages__icon {
+
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: var(--filter-button-background-color);
+}
+
+.advantages__title {
+
+    margin-bottom: 10px;
+    color: var(--primary-text-color);
+}
