@@ -1,5 +1,26 @@
 .filter {
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
+  
+    width: 100%;
+    height: auto;
+    max-width: 326px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    justify-content: flex-start;
+  
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        max-width: 100%;
+        gap: 8px;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+
+         @media screen and (min-width: 1200px) {
+             padding-top: 34px;
+             padding-bottom: 50px;
+         }
+   
 }
+

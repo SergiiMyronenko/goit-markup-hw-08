@@ -1,4 +1,5 @@
 .social {
+    display: flex;
     gap: 10px;
     flex-basis: calc((100% - 30px) / 4);
     justify-content: center;

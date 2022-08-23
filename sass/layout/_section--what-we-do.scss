@@ -1,5 +1,22 @@
 .what-we-do {
     padding-top: 0;
+
+@media screen and (max-width: 1199px) {
+display: none;
+    }
+}    
+
+
+.what-we-do__card-set {
+//mobile, tablet - not visible
+
+//desktop
+@media screen and (min-width: 1200px) {
+display: flex;
+flex-wrap: nowrap;
+column-gap: 30px;
+
+}
 }
 
 .what-we-do__item {

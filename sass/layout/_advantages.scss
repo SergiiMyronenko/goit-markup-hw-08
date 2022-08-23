@@ -1,5 +1,64 @@
+.advantages {
+    
+//mobile & tablet - refer to _section
+   
+//desktop
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.advantages__card-set {
+
+    //mobile - refer to card-set
+    
+
+    //tablet
+    @media screen  and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+        
+            }
+    //desktop
+    @media screen and(min-width: 1200px) {
+        flex-wrap:nowrap;
+       }
+}
+
 .advantages__item {
-    flex-basis: calc((100% - 90px)/4);
+    margin-bottom: 0;
+    
+     //tablet
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+//desktop
+    @media screen and (min-width: 1200px) {
+       flex-basis: calc((100% - 90px) / 4);
+        
+    }
+    
+    }
+   
+//mobile
+
+@media screen and (max-width: 767px) {
+.advantages__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+//tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.advantages__item:nth-child(1) {
+        margin-bottom: 30px;
+    }
+.advantages__item:nth-child(2) {
+            margin-bottom: 30px;
+        }
 }
 
 .advantages__icon {

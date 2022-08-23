@@ -21,3 +21,10 @@
 
 }
 
+
+.backdrop.is-open {
+    visibility: hidden;
+    opacity: 1;
+    pointer-events: none;
+
+}

@@ -1,0 +1,32 @@
+
+ //BUTTON OPENING MOBILE MENU
+
+ .header__menu-btn {
+     background-color: var(--header-background-color);
+     border: none;
+
+     @media screen and (min-width: 768px) {
+         display: none;
+     }
+ }
+
+
+ .header__menu-btn:focus,
+ .header__menu-btn:active {
+     fill: var(--active-button);
+ }
+
+ .header__menu-close {
+    position: absolute;
+   top: 15px;
+   right:0;
+   padding: 0;
+    
+    background-color: var(--header-background-color);
+    border: none;
+ }
+ 
+ .header__menu-close:focus,
+ header__menu-close:active {
+    fill: var(--active-button);
+     }

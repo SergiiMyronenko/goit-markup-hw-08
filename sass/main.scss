@@ -41,8 +41,8 @@
 @import './components/buttons';
 
 
-//sections 
-@import './components/sections';
+// //sections 
+// @import './components/sections';
 
 // footer
 @import './components/footer';
@@ -81,3 +81,9 @@
 
 //portfolio
 @import './layout/portfolio';
+
+//mobile menu
+@import './components/_mobile-menu';
+
+//mobile menu buttons
+@import './components/mobile-menu-buttons';

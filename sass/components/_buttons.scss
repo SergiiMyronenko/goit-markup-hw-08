@@ -1,6 +1,7 @@
 .button {
     display: flex;
     min-width: 200px;
+    height: 50px; 
     padding: 10px 32px;
     margin-right: auto;
     margin-left: auto;
@@ -9,11 +10,9 @@
     border: none;
     justify-content: center;
     align-items: center;
-    ;
-
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: calc(30 / 16);
     text-align: center;
     letter-spacing: 0.06em;
 
@@ -39,14 +38,14 @@
 // BUTTON IN PORTFOLIO-FILTER
 
 .filter-button {
-
-    padding: 4px 20px;
+    
+    padding: 6px 22px;
     border-radius: 4px;
     border: 2px solid transparent;
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: calc(26 / 16);
 
     color: var(--primary-text-color);
     background-color: var(--filter-button-background-color);
@@ -94,3 +93,4 @@
  .close-btn:focus {
      fill: var(--primary-accent-color);
  }
+

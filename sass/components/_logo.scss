@@ -2,12 +2,23 @@
     display: inline-block;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
+    font-size: 24px;
+    line-height: calc(28 / 24); 
+    letter-spacing: 0.03em;
+   text-decoration: none;
     color: var(--primary-accent-color);
 
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+            line-height: calc(31 / 26);
+    }
 }
+
+
+
+
+
 
 .logo__studio {
     color: #000000;

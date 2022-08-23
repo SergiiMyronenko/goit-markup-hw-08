@@ -6,23 +6,35 @@
 
 .footer__container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 70px;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        column-gap: 165px;
+        row-gap: 60px;
+        flex-wrap: wrap;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        column-gap: 70px;
+        flex-basis: baseline;
+        justify-content: space-between;
+    }
 }
+
 
 .footer__logo {
-    padding-bottom: 20px;
+
+  margin-bottom: 20px;
+
 }
 
-.footer__message {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--primary-background-color);
-}
 
 .footer__address {
     font-style: normal;
@@ -30,7 +42,7 @@
 
 
 .footer__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 
@@ -56,24 +68,47 @@
 }
 
 .footer__subscription {
-    margin-left: auto;
+    
+    width: 100%;
+    max-width: 450px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 570px;
+        // margin-left: auto;
+    }
+
+   
+}
+
+.footer__message {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
 }
 
 
-.footer__form {
-    display: flex;
-    gap: 12px;
-
-}
 
 .footer__input {
-    width: 358px;
-    padding: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
+    padding: 15px 16px;
+    
+   
+   
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background: transparent;
     color: var(--primary-background-color);
+
+    @media screen and (min-width: 1200px) {
+        max-width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
 }
 
 .footer__input::placeholder {
@@ -105,4 +140,10 @@
 .footer_icon:hover,
 .footer_icon:focus {
     background-color: var(--primary-accent-color);
+}
+
+.footer__form {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }

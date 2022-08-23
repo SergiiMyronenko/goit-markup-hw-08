@@ -41,18 +41,20 @@
                 Web<span class="logo__studio">Studio</span>
             </a>
 
+
+
             <!-- ELEMENT NAV__LIST -->
             <ul class="nav__list">
                 <li>
-                    <a class="nav__link" href="./index.html">Студия</a>
+                    <a class="nav__link" href="./index.html">Студія</a>
                 </li>
 
                 <li>
-                    <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+                    <a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
                 </li>
 
                 <li>
-                    <a class="nav__link" href="">Контакты</a>
+                    <a class="nav__link" href="">Контакти</a>
                 </li>
 
             </ul>
@@ -60,14 +62,14 @@
 
         <!--ELEMENT NAV__LiST-->
 
-        <ul class="nav__list">
+        <ul class="nav__list nav__contacts">
 
             <li>
 
 
                 <a class="nav__link" href="mailto:info@devstudio.com">
 
-                    <svg class="nav__icon" width="16" height="12">
+                    <svg class="nav__icon envelope">
                         <use href="./images/icons.svg#icon-envelope-1">
 
                         </use>
@@ -82,7 +84,7 @@
             <li>
 
                 <a class="nav__link" href="tel:+380961111111">
-                    <svg class="nav__icon" width="10" height="16">
+                    <svg class="nav__icon smartphone">
                         <use href="./images/icons.svg#icon-smartphone-1">
                         </use>
                     </svg>
@@ -90,21 +92,25 @@
 
             </li>
         </ul>
+        <svg class="header__menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#41-menu_40px">
+            </use>
+        </svg>
     </div>
 </header>
+
         
 
 
 
 
         <main>
-<!--Уникальный контент страницы -->
            
 <section class="section">
     <div class="container">
     
     <h1 class="visually-hidden">
-        Портфолио
+        Портфоліо
     </h1>
     
 <!-- Фильтр -->
@@ -127,7 +133,7 @@
             </button>
         </li>
 
-        <li>
+        <li >
             <button class="filter-button" type="button">
                 Дизайн  
             </button>
@@ -147,7 +153,7 @@
 
         <li class="portfolio__item">
 
-                       <a class="portfolio__link" href="">
+                       <a class="portfolio__link" href="Технокряк">
                             <div class="portfolio__img">
 
                                 <div class="portfolio__overlay">
@@ -158,7 +164,18 @@
                                     </p>
                                 </div>
                     
-                                    <img src="./images/image8-technokriak.jpg" alt="">
+                                    <img 
+                                    srcset="./images\portfolio\img-technokriak-450.jpg 450w, 
+                                    ./images\portfolio\img-technokriak-900.jpg 900w,
+                                    ./images\portfolio\img-technokriak-354.jpg 354w, 
+                                    ./images\portfolio\img-technokriak-708.jpg 708w,
+                                    ./images\portfolio\img-technokriak-370.jpg 370w, 
+                                    ./images\portfolio\img-technokriak-450.jpg 740w"
+                                    
+                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                                    
+                                    src="./images\portfolio\img-technokriak-450.jpg" 
+                                    alt="технокряк">
                             </div>
 
                                 <div class="portfolio__card-legend">
@@ -187,7 +204,16 @@
                         </p>
                     </div>
 
-            <img src="./images/image9-neworleanvsgoldenstar.jpg" alt="">
+            <img 
+            
+            srcset="
+            ./images\portfolio\img-new-orlean-450.jpg 450w, ./images\portfolio\img-new-orlean-900.jpg 900w,
+            ./images\portfolio\img-new-orlean-354.jpg 354w, ./images\portfolio\img-new-orlean-708.jpg 708w,
+            ./images\portfolio\img-new-orlean-370.jpg 370w, ./images\portfolio\img-new-orlean-740.jpg 740w"
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            src="./images\portfolio\img-new-orlean-450.jpg" alt="">
             </div>
 
             <div class="portfolio__card-legend">
@@ -215,7 +241,18 @@
                 </div>
 
 
-            <img src="./images/image10-seafood.jpg" alt="">
+            <img 
+            
+            srcset="
+            ./images\portfolio\img-seafood-450.jpg 450w, ./images\portfolio\img-seafood-900.jpg 900w,
+            ./images\portfolio\img-seafood-354.jpg 354w, ./images\portfolio\img-seafood-708.jpg 708w,
+            ./images\portfolio\img-seafood-370.jpg 370w, ./images\portfolio\img-seafood-740.jpg 740w"
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            
+            src="./images\portfolio\img-seafood-450.jpg" 
+            alt="ресторан сіфуд">
 
 </div>
             
@@ -245,7 +282,17 @@
                  </div>
 
 
-            <img src="./images/image11-prime.jpg" alt="">
+            <img 
+            
+             srcset="./images\portfolio\img-prime-450.jpg 450w, ./images\portfolio\img-prime-900.jpg 900w,
+                    ./images\portfolio\img-prime-354.jpg 354w, ./images\portfolio\img-prime-708.jpg 708w,
+                    ./images\portfolio\img-prime-370.jpg 370w, ./images\portfolio\img-prime-740.jpg 740w"
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            src="./images\portfolio\img-prime-450.jpg" 
+            alt="проект Prime">
+
         </div>
             <div class="portfolio__card-legend">
             <h2 class="portfolio__card-title">
@@ -271,7 +318,15 @@
         </p>
     </div>
 
-            <img src="./images/image12-boxes.jpg" alt="">
+            <img 
+            
+            srcset="./images\portfolio\img-boxes-450.jpg 450w, ./images\portfolio\img-boxes-900.jpg 900w,
+                    ./images\portfolio\img-boxes-354.jpg 354w, ./images\portfolio\img-boxes-708.jpg 708w,
+                    ./images\portfolio\img-boxes-370.jpg 370w, ./images\portfolio\img-boxes-740.jpg 740w"
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            src="./images\portfolio\img-boxes-450.jpg" alt="проект Boxes">
             </div>
             <div class="portfolio__card-legend">
             <h2 class="portfolio__card-title">
@@ -297,7 +352,16 @@
                         </p>
                     </div>
 
-            <img src="./images/image13-inspirationhasnoborders.jpg" alt="">
+            <img 
+            
+            srcset="./images\portfolio\img-inspiration-450.jpg 450w, ./images\portfolio\img-inspiration-900.jpg 900w,
+                    ./images\portfolio\img-inspiration-354.jpg 354w, ./images\portfolio\img-inspiration-708.jpg 708w,
+                    ./images\portfolio\img-inspiration-370.jpg 370w, ./images\portfolio\img-inspiration-740.jpg 740w"
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            
+            src="./images\portfolio\img-inspiration-450.jpg" alt="Inspiration has no Borders">
             </div>
             <div class="portfolio__card-legend">
             <h2 class="portfolio__card-title">
@@ -322,7 +386,17 @@
         </p>
     </div>
 
-            <img src="./images/image14-limitededition.jpg" alt="">
+            <img 
+            
+            srcset="./images\portfolio\img-limited-450.jpg 450w, ./images\portfolio\img-limited-900.jpg 900w,
+                    ./images\portfolio\img-limited-354.jpg 354w, ./images\portfolio\img-limited-708.jpg 708w,
+                    ./images\portfolio\img-limited-370.jpg 370w, ./images\portfolio\img-limited-740.jpg 740w"
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            src="./images\portfolio\img-limited-450.jpg" 
+            
+            alt="Издание Limited Edition">
             </div>
             <div class="portfolio__card-legend">
             <h2 class="portfolio__card-title">
@@ -347,8 +421,19 @@
         </p>
     </div>
 
-            <img src="./images/image15-lab.jpg" alt="">
-            </div>
+            <img 
+            
+             srcset="./images\portfolio\img-lab-450.jpg 450w, ./images\portfolio\img-lab-900.jpg 900w,
+                    ./images\portfolio\img-lab-354.jpg 354w, ./images\portfolio\img-lab-708.jpg 708w,
+                    ./images\portfolio\img-lab-370.jpg 370w, ./images\portfolio\img-lab-740.jpg 740w"
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            
+            src="./images\portfolio\img-lab-450.jpg" 
+            alt="Проект LAB">
+            
+        </div>
             <div class="portfolio__card-legend">
             <h2 class="portfolio__card-title">
                 Проект LAB
@@ -372,8 +457,22 @@
         </p>
     </div>
 
-            <img src="./images/image16-growingbusiness.jpg" alt="">
-            </div>
+            <img 
+            
+            srcset="./images\portfolio\img-growing-450.jpg 450w, ./images\portfolio\img-growing-900.jpg 900w,
+                    ./images\portfolio\img-growing-354.jpg 354w, ./images\portfolio\img-growing-708.jpg 708w,
+                    ./images\portfolio\img-growing-370.jpg 370w, ./images\portfolio\img-growing-740.jpg 740w"
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            
+            
+            src="./images\portfolio\img-growing-450.jpg" 
+            
+            alt="Growing Business">
+            
+        </div>
+            
             <div class="portfolio__card-legend"><h2 class="portfolio__card-title">
                 Growing Business
             </h2>
@@ -396,7 +495,7 @@
 
     <div class="container footer__container">
 
-        <!-- SECTION1 -->
+
 
         <div>
 
@@ -409,7 +508,7 @@
                 <ul class="footer__address">
                     <li class="footer__item">
                         <a class="footer__location" href="https://goo.gl/maps/uR5vyPPweFNLkcyV9" target="_blank"
-                            rel="noopener noreferrer">г. Київ, пр-т Лесі Українки, 26</a>
+                            rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
                     </li>
                     <li class="footer__item">
                         <a class="footer__email-phone" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -425,7 +524,7 @@
         </div>
 
 
-        <!-- SECTION2 -->
+
 
         <div>
             <h3 class="footer__message">приєднуйтесь</h3>
@@ -468,10 +567,9 @@
             </ul>
 
 
-
         </div>
 
-        <!-- SECTION3 -->
+
 
         <div class="footer__subscription">
 

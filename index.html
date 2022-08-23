@@ -42,6 +42,8 @@
                 Web<span class="logo__studio">Studio</span>
                 </a>
 
+                
+
 <!-- ELEMENT NAV__LIST -->
                 <ul class="nav__list">
                     <li>
@@ -61,14 +63,14 @@
 
 <!--ELEMENT NAV__LiST-->
             
-                <ul class="nav__list">
+                <ul class="nav__list nav__contacts">
                     
                     <li>
                        
                     
                     <a class="nav__link" href="mailto:info@devstudio.com">
                       
-                        <svg class="nav__icon" width="16" height="12">
+                        <svg class="nav__icon envelope">
                             <use href="./images/icons.svg#icon-envelope-1">
                         
                             </use>
@@ -83,7 +85,7 @@
                     <li>
                         
                         <a class="nav__link" href="tel:+380961111111">
-                        <svg class="nav__icon" width="10" height="16">
+                        <svg class="nav__icon smartphone">
                             <use href="./images/icons.svg#icon-smartphone-1">
                             </use>
                         </svg>
@@ -91,10 +93,21 @@
                        
                 </li>
                 </ul>
+
+                <button class="header__menu-btn" type="button" data-menu-open>
+                    <svg class="header__menu-icon" width="40" height="40">
+                        <use href="./images/icons.svg#41-menu_40px">
+                        </use>
+                    </svg>
+                </button>
+
+                
         </div>
+
+
     </header>
 
-<!--Уникальный контент страницы -->
+
     <main>
 
 
@@ -103,16 +116,16 @@
         <section class="hero">
 
 
-            <div class="container">
+            <div class="container hero__container">
                     <h1 class="hero__title">
-                        Эффективные решения для вашего бизнеса
+                        Ефективні рішення&nbspдля вашого бізнесу
                     </h1>
 
-                <button class="button" type="button" data-modal-open>Заказать услугу</button>
+                <button class="button" type="button" data-modal-open>Замовити послугу</button>
                 </div>
                 </section> 
 
-<!--advantages-->
+
 
 
         <section class="section advantages">
@@ -120,7 +133,7 @@
 
                 <h2 class="visually-hidden"> Переваги </h2>
 
-                <ul class="card-set">
+                <ul class="card-set advantages__card-set">
                     <li class="advantages__item">
                         <div class="section__icon advantages__icon">
                             <svg width="70" height="70">
@@ -131,10 +144,10 @@
                         
                         
                         <h3 class="section__card-title advantages__title">
-                            Внимание к деталям
+                            Увага до деталей
                         </h3>
                         
-                        Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         
                     </li>
 
@@ -146,10 +159,10 @@
                         </svg>
                         </div>
                          <h3 class="section__card-title advantages__title">
-                            Пунктуальность
+                            Пунктуальність
                         </h3>
                    
-                        Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                     
                     </li>
 
@@ -162,10 +175,10 @@
                         </svg>
                         </div>
                         <h3 class="section__card-title advantages__title">
-                            Планирование
+                            Планування
                         </h3>
                 
-                        Равным образом консультация с широким активом в значительной степени обуславливает.
+                        Так само консультація з широким активом значною мірою зумовлює.
                         
                     </li>
 
@@ -180,10 +193,10 @@
                             </svg>
                         </div>
                         <h3 class="section__card-title advantages__title">
-                            Современные технологии
+                            Сучасні технології
                         </h3>
                         
-                          Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                     
                     </li>
     
@@ -191,31 +204,38 @@
             </div>
             </section>
 
-<!-- WHAT WE DO -->
 
-        <section class="section what-we-do">
+
+    <section class="section what-we-do">
             <div class="container">
                 <h2 class="section__title">
                     Чем мы занимаемся
                 </h2>
-                <ul class="card-set">
+
+                <ul class="card-set what-we-do__card-set">
                     <li class="what-we-do__item">
                         
-                        <img src="./images/image1-desktop-applications.jpg" alt="Десктопные приложения" width="370" />
+                        <img 
+                        srcset="./images\what-we-do\img-desktop-apps@1px.jpg 1x, ./images\what-we-do\img-desktop-apps@2px.jpg 2x"
+                        src="./images\what-we-do\img-desktop-apps@1px.jpg" alt="Десктопные приложения" width="370"/>
                         <h3 class="section__card-title what-we-do__title">Десктопные приложения</h3>
                         
                     </li>
                     
                     <li class="what-we-do__item">
 
-                        <img src="./images/image2-mobile-applications.jpg" alt="Мобильные приложения" width="370" />
+                        <img 
+                        srcset="./images\what-we-do\img-mobile-apps@1px.jpg 1x, ./images\what-we-do\img-mobile-apps@2px.jpg 2x"
+                        src="./images\what-we-do\img-design-solutions@1px.jpg" alt="Мобильные приложения" width="370"/>
                         <h3 class="section__card-title what-we-do__title">Мобильные приложения</h3>
 
                     </li>
                     
                     <li class="what-we-do__item">
 
-                        <img src="./images/image3-design-solutions.jpg" alt="Дизайнерские решения" width="370" />                    
+                        <img 
+                         srcset="./images\what-we-do\img-design-solutions@1px.jpg 1x, ./images\what-we-do\img-design-solutions@2px.jpg 2x"
+                        src="./images\what-we-do\img-design-solutions@1px.jpg" alt="Дизайнерские решения" width="370" />                    
                         <h3 class=" section__card-title what-we-do__title">Дизайнерские решения</h3>
                     
                     </li>
@@ -226,7 +246,6 @@
 
                 
             
-<!-- Наша команда -->
 
 <section class="section team"> 
 <div class="container">    
@@ -237,12 +256,24 @@
 
                
                
-    <ul class="card-set">
+    <ul class="card-set team__card-set">
 
 
-        <li class="section__item team__item">
+        <li class="team__item">
                                 
-                            <img src="./images/image4-igordemyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                            <img 
+                            srcset="./images\team\demyanenko\img-igor-demyanenko-270.jpg 270w, 
+                            ./images\team\demyanenko\img-igor-demyanenko-540.jpg 540w, 
+                            ./images\team\demyanenko\img-igor-demyanenko-354.jpg 354w, 
+                            ./images\team\demyanenko\img-igor-demyanenko-708.jpg 708w,
+                            ./images\team\demyanenko\img-igor-demyanenko-450.jpg 450w,
+                            ./images\team\demyanenko\img-igor-demyanenko-900.jpg 900w"
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                            src="./images\team\demyanenko\img-igor-demyanenko-270.jpg" 
+                            
+                           
+                            alt="Игорь Демьяненко" 
+               >
                                 
                             
         <div class="team__card-legend">
@@ -288,14 +319,24 @@
                                         </a>
                                     </li>
                                     </ul>
-                                    </div>
+        </div>
 
                                 
         </li>
 
-        <li class="section__item team__item">
+        <li class="team__item">
                                                         
-                                <img src="./images/image5-olgarepina.jpg" alt="Ольга Репина" width="270" height="260">
+                                <img 
+                                srcset="
+                                ./images\team\repina\img-olga-repina-270.jpg 270w,
+                                ./images\team\repina\img-olga-repina-540.jpg 540w,
+                                ./images\team\repina\img-olga-repina-354.jpg 354w,
+                                ./images\team\repina\img-olga-repina-708.jpg 708w,
+                                ./images\team\repina\img-olga-repina-450.jpg 450w,
+                                ./images\team\repina\img-olga-repina-900.jpg 900w"
+                                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                                src="./images\team\repina\img-olga-repina-270.jpg"
+                                 alt="Ольга Репина">
 
                 <div class="team__card-legend">
                                     <h3 class="team__name">Ольга Репина</h3>
@@ -343,9 +384,19 @@
         </li>
 
 
-        <li class="section__item team__item">
+        <li class="team__item">
                                 
-                            <img src="./images/image6-nikolaytarasov.jpg" alt="Николай Тарасов" width="270" height="260">
+                            <img
+                            srcset="
+                            ./images\team\tarasov\img-mykola-tarasov-270.jpg 270w,
+                            ./images\team\tarasov\img-mykola-tarasov-540.jpg 540w,
+                            ./images\team\tarasov\img-mykola-tarasov-354.jpg 354w,
+                            ./images\team\tarasov\img-mykola-tarasov-708.jpg 708w,
+                            ./images\team\tarasov\img-mykola-tarasov-450.jpg 450w,
+                            ./images\team\tarasov\img-mykola-tarasov-900.jpg 900w" 
+                             sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"    
+                            src="./images\team\tarasov\img-mykola-tarasov-270.jpg"
+                            alt="Николай Тарасов">                    
             
             <div class="team__card-legend">
                             <h3 class="team__name">Николай Тарасов</h3>
@@ -391,9 +442,19 @@
         </li>
 
 
-        <li class="section__item team__item">
+        <li class="team__item">
                                     
-                            <img src="./images/image7-mikhailyermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
+                            <img
+                            srcset="
+                            ./images\team\ermakov\img-mykhailo-ermakov-270.jpg 270w,
+                            ./images\team\ermakov\img-mykhailo-ermakov-540.jpg 540w,
+                            ./images\team\ermakov\img-mykhailo-ermakov-354.jpg 354w,
+                            ./images\team\ermakov\img-mykhailo-ermakov-708.jpg 708w,
+                            ./images\team\ermakov\img-mykhailo-ermakov-450.jpg 450w,
+                            ./images\team\ermakov\img-mykhailo-ermakov-900.jpg 900w" 
+                             sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                            src="./images\team\ermakov\img-mykhailo-ermakov-270.jpg" 
+                            alt="Михаил Ермаков">
                     
         <div class="team__card-legend">
                                 <h3 class="team__name">Михаил Ермаков</h3>
@@ -442,11 +503,10 @@
     
     </ul>
 </div>  
-</section>
+</section> -->
 
 
        
-<!-- OUR CLIENTS-->
 <section class="section clients">
 
     <div class="container">
@@ -457,7 +517,7 @@
 
 
 
-            <ul class="card-set">
+            <ul class="card-set clients__card-set">
 
                 <li class="clients__item">
 
@@ -532,15 +592,15 @@
 </section>
 
 
-    </main>
+</main>
 
-<!--FOOTER-->
+
 
     <footer class="footer">
     
 <div class="container footer__container">
     
-    <!-- SECTION1 -->
+
 
         <div>
 
@@ -553,7 +613,7 @@
                 <ul class="footer__address">
                     <li class="footer__item">
                         <a class="footer__location" href="https://goo.gl/maps/uR5vyPPweFNLkcyV9" target="_blank"
-                        rel="noopener noreferrer">г. Київ, пр-т Лесі Українки, 26</a>
+                        rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
                     </li>
                     <li class="footer__item">
                         <a class="footer__email-phone" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -569,7 +629,7 @@
         </div>
 
 
-<!-- SECTION2 -->
+
 
          <div>
         <h3 class="footer__message">приєднуйтесь</h3>
@@ -612,10 +672,9 @@
 </ul>
 
 
+</div>
 
-        </div>
 
-    <!-- SECTION3 -->
 
 <div class="footer__subscription">
 
@@ -643,7 +702,7 @@
 
 
 
-<!--MODAL-->
+
 
     <div class="backdrop is-hidden" data-modal>
 
@@ -730,7 +789,104 @@
 
     </div>
 
+
+    <!--MOBILE MENU-->
+
+
+<div class="backdrop is-open" data-menu>
+    <div class="container menu">
+
+
+
+
+
+    <ul class="menu__list">
+        
+
+        <li class="menu__item">
+            <a class="menu__link" href="./index.html">Студія
+            </a>
+        </li>
+    
+
+        <li class="menu__item">
+            <a class="menu__link" href="./portfolio.html">Портфоліо
+            </a>
+        </li>
+    
+
+        <li class="menu__item margin-b">
+            <a class="menu__link" href="">Контакти
+           </a>
+        </li>
+       
+
+        <li class="menu__item">
+            <a class="menu__link menu__phone" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+         </li>
+
+        <li class="menu__item">
+            <a class=" menu__link menu__email" href="mailto:info@devstudio.com">
+               info@devstudio.com
+            </a>
+        </li>
+           
+    </ul>
+
+
+    <ul class="menu__social">
+    
+        <li class="menu__social-item">
+            <a class="menu__social-link" href="">
+               Instagram
+            </a>
+    
+        </li>
+
+        <li class="menu__social-item">
+            <a class="menu__social-link" href="">
+                Twitter
+            </a>
+        
+        </li>
+
+        <li class="menu__social-item">
+            <a class="menu__social-link" href="">
+                Facebook
+            </a>
+        
+        </li>
+
+        <li class="menu__social-item">
+            <a class="menu__social-link" href="">
+                LinkedIn
+            </a>
+        
+        </li>
+            
+    
+    </ul>
+
+    <button class="header__menu-close" type="button" data-menu-close>
+        <svg class="header__menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#42-menu-close_40px">
+            </use>
+        </svg>
+    </button>
+
+</div>
+</div>
+
+
+
+    <!--SCRIPTS-->
+
     <script src="./js/modal.js">
+    </script>
+
+    <script src="./js/mobile-menu.js">
 
     </script>
  
