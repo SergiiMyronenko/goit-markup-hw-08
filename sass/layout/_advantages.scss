@@ -1,6 +1,5 @@
 .advantages {
     
-//mobile & tablet - refer to _section
    
 //desktop
     @media screen and (min-width: 1200px) {
@@ -9,24 +8,7 @@
     }
 }
 
-.advantages__card-set {
 
-    //mobile - refer to card-set
-    
-
-    //tablet
-    @media screen  and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: space-between;
-        
-            }
-    //desktop
-    @media screen and(min-width: 1200px) {
-        flex-wrap:nowrap;
-       }
-}
 
 .advantages__item {
     margin-bottom: 0;
@@ -51,15 +33,6 @@
     }
 }
 
-//tablet
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-.advantages__item:nth-child(1) {
-        margin-bottom: 30px;
-    }
-.advantages__item:nth-child(2) {
-            margin-bottom: 30px;
-        }
-}
 
 .advantages__icon {
 
@@ -70,7 +43,12 @@
 }
 
 .advantages__title {
-
+   
     margin-bottom: 10px;
     color: var(--primary-text-color);
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
+
 }

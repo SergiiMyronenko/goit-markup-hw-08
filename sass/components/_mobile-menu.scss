@@ -1,9 +1,15 @@
 
 
 .menu {
+outline: 2px solid black;
+
     position: relative;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 64px;
+    padding: 48px 40px;
+    width: 100%;
     height: 100%;
 background-color: white;
     
@@ -13,19 +19,17 @@ background-color: white;
 }
 
 .menu__list {
-
+outline: 1px solid tomato;
 display: flex;
 flex-direction: column;
-flex-basis: baseline;
 
+margin-bottom: auto;
 gap: 32px;
 
 }
 
 
-.margin-b {
-    margin-bottom: 302px;
-}
+
 
 .menu__link {
     font-weight: 500;
@@ -35,9 +39,20 @@ gap: 32px;
     color: var(--primary-text-color);
 }
 
+.menu__link--current {
+    color: var(--primary-accent-color);
+}
+
 .menu__link:focus,
 .menu__link:active {
     color:var(--primary-accent-color);
+}
+
+.menu__contact {
+outline: 2px solid aqua;
+display: flex;
+flex-direction: column; 
+gap: 32px;
 }
 
 .menu__phone {
@@ -46,28 +61,31 @@ gap: 32px;
     color: var(--secondary-text-color);
 }
 
-.menu__email {
+.menu__email {  
 font-size: 24px;
-line-height: calc(24 / 28);
+line-height: calc(28 / 24);
 color: var(--secondary-text-color);
 }
 
 .menu__social {
 
 display: flex;
-padding-top: 64px;
+flex-wrap: wrap;
 font-size: 18px;
 line-height: calc(22 / 18);
 gap: 20px;
+color: var(--primary-accent-color);
 }
 
-.menu__social-item {
+.menu__social-item:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+
 }
 
 .menu__social-link:focus,
 .menu__social-link:active {
-    color: var(--primary-accent-color);
+    color: var(--active-button);
 }
 
 
@@ -76,6 +94,7 @@ gap: 20px;
     position: fixed;
     top: 0;
     left: 0;
+    transform: translateX(0);
     z-index: 100;
     width: 100%;
     height: 100%;
@@ -83,19 +102,17 @@ gap: 20px;
     align-items: center;
     justify-content: center;
     pointer-events: none;
-    opacity: 0;
+    // opacity: 0;
     visibility: hidden;
+    transition: transform 250ms linear;
     
+    }
     
-    transition: opacity 250ms linear, visibility 250ms linear;
 
-}
 
 .menu-overlay.is-open {
-    visibility:visible;
-    opacity: 1;
-    pointer-events: initial;
-    background-color: black;
+    transform: translateX(100%);
+   
 
 }
 

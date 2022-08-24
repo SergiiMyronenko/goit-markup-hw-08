@@ -8,11 +8,13 @@
 }
 
 .portfolio__item {
+   
+    
 @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 60px) / 2);
     }
     
- @media screen and (min-width: px) {
+ @media screen and (min-width: 1200px) {
 
 flex-basis: calc((100% - 90px) / 3);
 }
@@ -22,8 +24,7 @@ flex-basis: calc((100% - 90px) / 3);
     position: relative;
     display: flex;
     flex-direction: column;
-
-    outline: 1px solid var(--outline);
+    height: 100%;
     transition-property: box-shadow;
     transition-duration: var(--duration);
     transition-timing-function: var(--timing-fun);
@@ -84,6 +85,8 @@ flex-basis: calc((100% - 90px) / 3);
 
 .portfolio__card-legend {
     padding: 20px 24px;
+    flex-grow: 1;
+    border: 1px solid var(--outline);
 
 }
 

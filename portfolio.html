@@ -92,11 +92,18 @@
 
             </li>
         </ul>
-        <svg class="header__menu-icon" width="40" height="40">
-            <use href="./images/icons.svg#41-menu_40px">
-            </use>
-        </svg>
+
+        <button class="header__menu-btn" type="button" data-menu-open>
+            <svg class="header__menu-icon" width="40" height="40">
+                <use href="./images/icons.svg#41-menu_40px">
+                </use>
+            </svg>
+        </button>
+
+
     </div>
+
+
 </header>
 
         
@@ -151,87 +158,45 @@
 <!-- Cards -->
     <ul class="card-set portfolio">
 
-        <li class="portfolio__item">
+<li class="portfolio__item">
+    <a class="portfolio__link" href="">
 
-                       <a class="portfolio__link" href="Технокряк">
-                            <div class="portfolio__img">
+        <div class="portfolio__img">
+            <div class="portfolio__overlay">
 
-                                <div class="portfolio__overlay">
-
-                                    <p class="portfolio__overlay-text">
-                                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                                        посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.
-                                    </p>
-                                </div>
-                    
-                                    <img 
-                                    srcset="./images\portfolio\img-technokriak-450.jpg 450w, 
-                                    ./images\portfolio\img-technokriak-900.jpg 900w,
-                                    ./images\portfolio\img-technokriak-354.jpg 354w, 
-                                    ./images\portfolio\img-technokriak-708.jpg 708w,
-                                    ./images\portfolio\img-technokriak-370.jpg 370w, 
-                                    ./images\portfolio\img-technokriak-450.jpg 740w"
-                                    
-                                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-                                    
-                                    src="./images\portfolio\img-technokriak-450.jpg" 
-                                    alt="технокряк">
-                            </div>
-
-                                <div class="portfolio__card-legend">
-                                    <h2 class="portfolio__card-title">
-                                        Технокряк
-                                    </h2>
-                                         <p class="portfolio__card-subtitle">
-                                            Веб-сайт
-                                        </p>
-                                </div>
-           
-                        </a>   
-
-                        </li>
-
-        <li class="section__card">
-
-            <a class="portfolio__link" href="">
-
-                <div class="portfolio__img">
-                    <div class="portfolio__overlay">
-                
-                        <p class="portfolio__overlay-text">
-                            Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
-                            посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.
-                        </p>
-                    </div>
-
-            <img 
-            
-            srcset="
-            ./images\portfolio\img-new-orlean-450.jpg 450w, ./images\portfolio\img-new-orlean-900.jpg 900w,
-            ./images\portfolio\img-new-orlean-354.jpg 354w, ./images\portfolio\img-new-orlean-708.jpg 708w,
-            ./images\portfolio\img-new-orlean-370.jpg 370w, ./images\portfolio\img-new-orlean-740.jpg 740w"
-                                    
-            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
-            
-            src="./images\portfolio\img-new-orlean-450.jpg" alt="">
+                <p class="portfolio__overlay-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                    посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.
+                </p>
             </div>
 
-            <div class="portfolio__card-legend">
 
+            <img srcset="
+             ./images/portfolio/img-technokriak-450.jpg 450w, 
+             ./images/portfolio/img-technokriak-900.jpg 900w,
+            ./images/portfolio/img-technokriak-354.jpg 354w, 
+            ./images/portfolio/img-technokriak-708.jpg 708w,
+            ./images/portfolio/img-technokriak-370.jpg 370w, 
+            ./images/portfolio/img-technokriak-740.jpg 740w"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+                src="./images/portfolio/img-technokriak-450.jpg" alt="Технокряк">
+
+        </div>
+        <div class="portfolio__card-legend">
             <h2 class="portfolio__card-title">
-                Постер New Orlean vs Golden Star
+                Технокряк
             </h2>
             <p class="portfolio__card-subtitle">
-                Дизайн
+                Веб-сайт
             </p>
-            </div>   
-            </a>
-        </li>
-        
-        <li class="section__card">
+        </div>
+    </a>
+</li>
+      
+<li class="portfolio__item">
             <a class="portfolio__link" href="">
 
-<div class="portfolio__img">
+        <div class="portfolio__img">
 
                 <div class="portfolio__overlay">
                     <p class="portfolio__overlay-text">
@@ -244,14 +209,68 @@
             <img 
             
             srcset="
-            ./images\portfolio\img-seafood-450.jpg 450w, ./images\portfolio\img-seafood-900.jpg 900w,
-            ./images\portfolio\img-seafood-354.jpg 354w, ./images\portfolio\img-seafood-708.jpg 708w,
-            ./images\portfolio\img-seafood-370.jpg 370w, ./images\portfolio\img-seafood-740.jpg 740w"
+            ./images/portfolio/img-new-orlean-450.jpg 450w, 
+            ./images/portfolio/img-new-orlean-900.jpg 900w,
+            ./images/portfolio/img-new-orlean-354.jpg 354w, 
+            ./images/portfolio/img-new-orlean-708.jpg 708w,
+            ./images/portfolio/img-new-orlean-370.jpg 370w, 
+            ./images/portfolio/img-new-orlean-740.jpg 740w
+            "
                                     
             sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
             
             
-            src="./images\portfolio\img-seafood-450.jpg" 
+            src="./images/portfolio/img-new-orlean-450.jpg" 
+            alt="New Orlean vs Golden Star">
+
+</div>
+            
+            <div class="portfolio__card-legend">
+
+            <h2 class="portfolio__card-title">
+                Постер New Orlean vs Golden Star
+            </h2>
+            <p class="portfolio__card-subtitle">
+                Дизайн
+            </p>
+            </div>
+        </a>
+      
+        </li>
+
+                               
+                          
+
+     
+        
+        <li class="portfolio__item">
+            <a class="portfolio__link" href="">
+
+        <div class="portfolio__img">
+
+                <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о&nbsp;компании или частном лице.
+                     </p>
+                </div>
+
+
+            <img 
+            
+            srcset="
+            ./images/portfolio/img-seafood-450.jpg 450w, 
+            ./images/portfolio/img-seafood-900.jpg 900w,
+            ./images/portfolio/img-seafood-354.jpg 354w, 
+            ./images/portfolio/img-seafood-708.jpg 708w,
+            ./images/portfolio/img-seafood-370.jpg 370w, 
+            ./images/portfolio/img-seafood-740.jpg 740w
+            "
+                                    
+            sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
+            
+            
+            src="./images/portfolio/img-seafood-450.jpg" 
             alt="ресторан сіфуд">
 
 </div>
@@ -269,7 +288,8 @@
       
         </li>
         
-        <li class="section__card">
+        
+        <li class="portfolio__item">
             <a class="portfolio__link" href=""> 
 
 <div class="portfolio__img">
@@ -284,13 +304,17 @@
 
             <img 
             
-             srcset="./images\portfolio\img-prime-450.jpg 450w, ./images\portfolio\img-prime-900.jpg 900w,
-                    ./images\portfolio\img-prime-354.jpg 354w, ./images\portfolio\img-prime-708.jpg 708w,
-                    ./images\portfolio\img-prime-370.jpg 370w, ./images\portfolio\img-prime-740.jpg 740w"
+             srcset="
+             ./images/portfolio/img-prime-450.jpg 450w, 
+             ./images/portfolio/img-prime-900.jpg 900w,
+            ./images/portfolio/img-prime-354.jpg 354w, 
+            ./images/portfolio/img-prime-708.jpg 708w,
+            ./images/portfolio/img-prime-370.jpg 370w, 
+            ./images/portfolio/img-prime-740.jpg 740w"
                                     
             sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
             
-            src="./images\portfolio\img-prime-450.jpg" 
+            src="./images/portfolio/img-prime-450.jpg" 
             alt="проект Prime">
 
         </div>
@@ -305,7 +329,7 @@
             </a>   
         </li>
         
-        <li class="section__card">
+        <li class="portfolio__item">
             <a class="portfolio__link" href=""> 
                 
                 
@@ -320,13 +344,13 @@
 
             <img 
             
-            srcset="./images\portfolio\img-boxes-450.jpg 450w, ./images\portfolio\img-boxes-900.jpg 900w,
-                    ./images\portfolio\img-boxes-354.jpg 354w, ./images\portfolio\img-boxes-708.jpg 708w,
-                    ./images\portfolio\img-boxes-370.jpg 370w, ./images\portfolio\img-boxes-740.jpg 740w"
+            srcset="./images/portfolio/img-boxes-450.jpg 450w, ./images/portfolio/img-boxes-900.jpg 900w,
+                    ./images/portfolio/img-boxes-354.jpg 354w, ./images/portfolio/img-boxes-708.jpg 708w,
+                    ./images/portfolio/img-boxes-370.jpg 370w, ./images/portfolio/img-boxes-740.jpg 740w"
                                     
             sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
             
-            src="./images\portfolio\img-boxes-450.jpg" alt="проект Boxes">
+            src="./images/portfolio/img-boxes-450.jpg" alt="проект Boxes">
             </div>
             <div class="portfolio__card-legend">
             <h2 class="portfolio__card-title">
@@ -339,7 +363,7 @@
             </a>   
         </li>
         
-        <li class="portfolio-card">
+        <li class="portfolio__item">
 
             <a class="portfolio__link" href="">
 
@@ -354,14 +378,14 @@
 
             <img 
             
-            srcset="./images\portfolio\img-inspiration-450.jpg 450w, ./images\portfolio\img-inspiration-900.jpg 900w,
-                    ./images\portfolio\img-inspiration-354.jpg 354w, ./images\portfolio\img-inspiration-708.jpg 708w,
-                    ./images\portfolio\img-inspiration-370.jpg 370w, ./images\portfolio\img-inspiration-740.jpg 740w"
+            srcset="./images/portfolio/img-inspiration-450.jpg 450w, ./images/portfolio/img-inspiration-900.jpg 900w,
+                    ./images/portfolio/img-inspiration-354.jpg 354w, ./images/portfolio/img-inspiration-708.jpg 708w,
+                    ./images/portfolio/img-inspiration-370.jpg 370w, ./images/portfolio/img-inspiration-740.jpg 740w"
                                     
             sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
             
             
-            src="./images\portfolio\img-inspiration-450.jpg" alt="Inspiration has no Borders">
+            src="./images/portfolio/img-inspiration-450.jpg" alt="Inspiration has no Borders">
             </div>
             <div class="portfolio__card-legend">
             <h2 class="portfolio__card-title">
@@ -374,7 +398,7 @@
            </a>   
         </li>
         
-        <li class="section__card">
+        <li class="portfolio__item">
             <a class="portfolio__link" href="">
 
 <div class="portfolio__img">
@@ -388,13 +412,13 @@
 
             <img 
             
-            srcset="./images\portfolio\img-limited-450.jpg 450w, ./images\portfolio\img-limited-900.jpg 900w,
-                    ./images\portfolio\img-limited-354.jpg 354w, ./images\portfolio\img-limited-708.jpg 708w,
-                    ./images\portfolio\img-limited-370.jpg 370w, ./images\portfolio\img-limited-740.jpg 740w"
+            srcset="./images/portfolio/img-limited-450.jpg 450w, ./images/portfolio/img-limited-900.jpg 900w,
+                    ./images/portfolio/img-limited-354.jpg 354w, ./images/portfolio/img-limited-708.jpg 708w,
+                    ./images/portfolio/img-limited-370.jpg 370w, ./images/portfolio/img-limited-740.jpg 740w"
                                     
             sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
             
-            src="./images\portfolio\img-limited-450.jpg" 
+            src="./images/portfolio/img-limited-450.jpg" 
             
             alt="Издание Limited Edition">
             </div>
@@ -409,7 +433,7 @@
             </a>   
         </li>
         
-        <li class="section__card">
+        <li class="portfolio__item">
             <a class="portfolio__link" href="">
 
 <div class="portfolio__img">
@@ -423,14 +447,14 @@
 
             <img 
             
-             srcset="./images\portfolio\img-lab-450.jpg 450w, ./images\portfolio\img-lab-900.jpg 900w,
-                    ./images\portfolio\img-lab-354.jpg 354w, ./images\portfolio\img-lab-708.jpg 708w,
-                    ./images\portfolio\img-lab-370.jpg 370w, ./images\portfolio\img-lab-740.jpg 740w"
+             srcset="./images/portfolio/img-lab-450.jpg 450w, ./images/portfolio/img-lab-900.jpg 900w,
+                    ./images/portfolio/img-lab-354.jpg 354w, ./images/portfolio/img-lab-708.jpg 708w,
+                    ./images/portfolio/img-lab-370.jpg 370w, ./images/portfolio/img-lab-740.jpg 740w"
                                     
             sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
             
             
-            src="./images\portfolio\img-lab-450.jpg" 
+            src="./images/portfolio/img-lab-450.jpg" 
             alt="Проект LAB">
             
         </div>
@@ -445,7 +469,7 @@
             </a>   
         </li>
         
-        <li class="section__card">
+        <li class="portfolio__item">
             <a class="portfolio__link" href="">
 
 <div class="portfolio__img">
@@ -459,15 +483,15 @@
 
             <img 
             
-            srcset="./images\portfolio\img-growing-450.jpg 450w, ./images\portfolio\img-growing-900.jpg 900w,
-                    ./images\portfolio\img-growing-354.jpg 354w, ./images\portfolio\img-growing-708.jpg 708w,
-                    ./images\portfolio\img-growing-370.jpg 370w, ./images\portfolio\img-growing-740.jpg 740w"
+            srcset="./images/portfolio/img-growing-450.jpg 450w, ./images/portfolio/img-growing-900.jpg 900w,
+                    ./images/portfolio/img-growing-354.jpg 354w, ./images/portfolio/img-growing-708.jpg 708w,
+                    ./images/portfolio/img-growing-370.jpg 370w, ./images/portfolio/img-growing-740.jpg 740w"
                                     
             sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 100vw"
             
             
             
-            src="./images\portfolio\img-growing-450.jpg" 
+            src="./images/portfolio/img-growing-450.jpg" 
             
             alt="Growing Business">
             

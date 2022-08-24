@@ -2,20 +2,6 @@
     background-color: var(--filter-button-background-color);
 }
 
-.team__card-set {
-
-    //tablet
-    @media screen and(min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        }
-
-        @media screen and(min-width: 1200px) {
-            flex-wrap: nowrap;
-        }
-
-}
 
 .team__item {
     border-bottom-right-radius: 4px;
@@ -44,7 +30,6 @@
     color: var(--primary-text-color);
 
 }
-
 
 
 .team__role {

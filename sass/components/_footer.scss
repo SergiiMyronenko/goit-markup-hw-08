@@ -5,6 +5,7 @@
 }
 
 .footer__container {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,14 +18,16 @@
         column-gap: 165px;
         row-gap: 60px;
         flex-wrap: wrap;
+        align-items: baseline;
         
     }
 
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
+        flex-direction: row;
         column-gap: 70px;
-        flex-basis: baseline;
         justify-content: space-between;
+        text-align: left;
     }
 }
 
@@ -74,7 +77,7 @@
 
     @media screen and (min-width: 1200px) {
         max-width: 570px;
-        // margin-left: auto;
+    
     }
 
    

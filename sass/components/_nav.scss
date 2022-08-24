@@ -1,5 +1,4 @@
 .nav {
-
    
 display: flex;
 align-items: center;
@@ -7,14 +6,12 @@ color: var(--primary-text-color);
 
     @media screen  and (min-width: 768px) {
         
-        gap: 87px;
-         margin-right: 96px;
-      
+gap: 87px;
+margin-right: auto;
     }
  
 @media screen and (min-width: 1200px) {
-    gap: 92px;
-    
+    gap: 92px;  
 }
 
  }
@@ -26,22 +23,20 @@ display: none;
 @media screen and (min-width: 768px) {
     display: flex;
     gap: 50px;
-   
-    
+     
 }
-
 
 }
 
 .nav__link {
 display: none;
 transition-property: color;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--timing-fun);
+transition-duration: var(--duration);
+transition-timing-function: var(--timing-fun);
 
-    @media screen and (min-width: 768px) {
-    display: flex;
-    }
+@media screen and (min-width: 768px) {
+display: flex;
+}
 
     
 }
@@ -56,11 +51,14 @@ transition-property: color;
 
     position: relative;
     color: var(--primary-accent-color);
+    
+    
 }
 
 .nav__link--current::after {
     display: block;
     position: absolute;
+    width: 100%;
     bottom: -28px;
     content: "";
     height: 4px;
@@ -71,12 +69,10 @@ transition-property: color;
         display: none;
     }
         
-    @media screen and (min-width: 768px) {
-    width: 47px;
-    }
-
+   
     @media screen and (min-width: 1200px) {
-    width: 48px;
+    bottom: -32px;
+    
          }
 }
 
@@ -97,17 +93,18 @@ margin-right: 10px;
     }
     
 
-
 .nav__contacts {
 
 @media screen and (min-width: 768px) {
-        display: block; 
+        display: flex; 
+        flex-direction: column;
+        gap: 10px;
         font-size: 12px;
         line-height: calc(14 / 12);      
     }
 
         @media screen and (min-width: 1200px) {
-            display: flex;
+            flex-direction: row;
             gap: 30px;
             font-size: 14px;
             line-height: calc(16 / 14);
